@@ -8,6 +8,6 @@ COPY *.go ./
 
 RUN go build -o /fiberapp
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "/fibrapp" ]
