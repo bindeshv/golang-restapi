@@ -10,4 +10,4 @@ RUN go build -o /fiberapp
 
 EXPOSE 3000
 
-CMD [ "/fibrapp" ]
+CMD [ "/fiberapp" ]
