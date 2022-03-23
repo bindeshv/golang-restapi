@@ -9,14 +9,15 @@ import (
 type Person struct {
 	FirstName string `json:"firstname"`
 	LastName  string `json:"lastname"`
+	Email     string `json:"email"`
 }
 
 func main() {
 	app := fiber.New()
 
 	people := []Person{
-		{FirstName: "Anders", LastName: "Jackson"},
-		{FirstName: "Joe", LastName: "Rosenberg"},
+		{FirstName: "Anders", LastName: "Jackson", Email: "jackson@mail.com"},
+		{FirstName: "Joe", LastName: "Rosenberg", Email: "joe@email.com"},
 	}
 
 	app.Get("/", func(c *fiber.Ctx) error {
