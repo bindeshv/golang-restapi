@@ -14,6 +14,7 @@ type Person struct {
 
 func main() {
 	app := fiber.New()
+	fmt.println()
 
 	people := []Person{
 		{FirstName: "Anders", LastName: "Jackson", Email: "jackson@mail.com"},
